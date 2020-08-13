@@ -1,0 +1,149 @@
+.portfolio-experiment, .scene {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-display: flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  background-color: hotpink;
+}
+
+.portfolio-experiment .rainbow {
+  width: 20vw;
+  height: 10vw;
+  min-width: 150px;
+  min-height: 75px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-experiment .rainbow .bow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20vw;
+  min-height: 150px;
+  box-sizing: content-box;
+}
+.portfolio-experiment .rainbow .bow:before {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-radius: 50%;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(1) {
+  -webkit-animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.0555555556s;
+          animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.0555555556s;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(1):before {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-bottom-color: #FF0013;
+  border-left-color: #FF0013;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(2) {
+  -webkit-animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.1111111111s;
+          animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.1111111111s;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(2):before {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border-bottom-color: #FF9713;
+  border-left-color: #FF9713;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(3) {
+  -webkit-animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.1666666667s;
+          animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.1666666667s;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(3):before {
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border-bottom-color: #FFE213;
+  border-left-color: #FFE213;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(4) {
+  -webkit-animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.2222222222s;
+          animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.2222222222s;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(4):before {
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border-bottom-color: #2DCE13;
+  border-left-color: #2DCE13;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(5) {
+  -webkit-animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.2777777778s;
+          animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.2777777778s;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(5):before {
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  border-bottom-color: #47C6FF;
+  border-left-color: #47C6FF;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(6) {
+  -webkit-animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.3333333333s;
+          animation: bow 2.5s cubic-bezier(0.46, 0.1, 0.25, 1) infinite 0.3333333333s;
+}
+.portfolio-experiment .rainbow .bow:nth-of-type(6):before {
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+  border-bottom-color: #5900AB;
+  border-left-color: #5900AB;
+}
+@-webkit-keyframes bow {
+  0%, 5% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  40%, 60% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  95%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes bow {
+  0%, 5% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  40%, 60% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  95%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
